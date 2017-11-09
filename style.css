@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed');
+
+body {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  color: #ccccff;
+
+  /* gradient background */
+  background: #283048;
+    /*background: #1f1c2c; /* fallback for old browsers */*/
+    /*background: -webkit-linear-gradient(to top, #1f1c2c, #928dab); /* Chrome 10-25, Safari 5.1-6 */*/
+    /*background: linear-gradient(to top, #1f1c2c, #928dab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */*/
+}
+
+
+a {
+  text-decoration: none;
+  color: #4d4dff;
+}
+
+a:hover {
+  /*color: #ccccff; */
+}
+
+a, p {
+  font-size: 20px;
+}
+
+h1, h2, h3, h4 {
+  text-shadow: 1px 1px 1px rgba(150, 150, 108, 1);
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h1.main-header {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+header, footer {
+  width: 100%;
+  text-align: center;
+  /*color: #000033;*/
+}
+
+nav {
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  box-sizing: border-box;
+  /*width: 100%;*/
+
+  /*width: 2%;*/
+  /*background-color: #4d4dff;*/
+  /*height: 30px;*/
+  margin: 0 auto;
+  /*border: 1px solid #000033;*/
+  border: 1px solid #ccccff;
+  padding: 10px;
+  font-size: 20px;
+}
+
+nav ul li a {
+  /*text-decoration: none;*/
+  /*color: #000033;*/
+  color: inherit;
+}
+
+nav ul li:hover {
+  /*background-color: #b3b3ff;*/
+  background-color: #ccccff;
+  color: #283048;
+}
+
+.img {
+  color: white;
+}
+
+.banner-img {
+  width: 100px;
+}
+
+.section-img {
+  width: 75px;
+}
+
+
+section {
+  line-height: 24px;
+  font-size: 15px;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.tech ul {
+  list-style-type: none;
+}
+
+.tech ul li{
+  /*display: inline-block;*/
+}
