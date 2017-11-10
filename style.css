@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+/* #ccccff, #283048 */
 
 body {
-  font-family: 'Saira Semi Condensed', sans-serif;
+  /*font-family: 'Saira Semi Condensed', sans-serif;*/
+  font-family: 'Ubuntu', sans-serif;
   color: #ccccff;
 
   /* gradient background */
@@ -39,12 +44,12 @@ h2, h3, h4,h5,h6 {
 
 h5 {
   font-size: 15px;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 
 h6 {
   font-size: 12px;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 
 h2.main-header {
@@ -167,8 +172,6 @@ h2.heading {
 footer {
   width: 100%;
   clear: both;
-  padding-top: 50px;
-  /*margin-top: 30px;*/
 }
 
 
@@ -179,6 +182,37 @@ footer {
 .tech ul li{
   /*display: inline-block;*/
 }
+
+
+/* typign animation*/
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+/* typing animation*/
+h2.main-header{
+  text-align: center;
+  /*color: lime;*/
+  color: #ccccff;
+  font-family: "Courier";
+  /*font-family: "Courier";
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);*/
+
+  /*font: bold 200% Consolas, Monaco, monospace;*/
+  border-right: .1em solid;
+  width: 16.5em; /* fallback */
+  width: 26ch; /* # of chars */
+  margin: 10px calc(50% - 12ch);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(26, end), /* # of steps = # of chars */
+  blink-caret .5s step-end infinite alternate;
+}
+/*****/
+
 
 
 /* iPhone */
