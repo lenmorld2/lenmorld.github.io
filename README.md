@@ -8,6 +8,9 @@ Things done:
 
 TODO:
 
+
+publish on github.io
+
 transition: all -> fix
 languages used on projects
 fix unruly size of project-box
