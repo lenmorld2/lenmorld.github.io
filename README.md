@@ -12,6 +12,8 @@ TODO:
 
 publish on github.io
 
+snapshot map of poutine places in MTL
+
 transition: all -> fix
 languages used on projects
 fix unruly size of project-box
