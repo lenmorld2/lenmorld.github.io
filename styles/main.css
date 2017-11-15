@@ -18,9 +18,9 @@ body {
 }
 
 
-h4 {
-  /*margin-top: 0;*/
-  /*margin-bottom: px;*/
+h4.project-title {
+  /*margin-top: 5px;*/
+  /*margin-bottom: 5px;*/
 }
 
 span.in-progress {
@@ -129,7 +129,7 @@ nav ul li:hover {
   /*float:left;*/
   min-width: 300px;
   padding: 20px;
-  margin: 10px;
+  margin: 15px;
   text-align: center;
 
   /* box-shadow */
@@ -228,6 +228,28 @@ h2.main-header{
   blink-caret .5s step-end infinite alternate;
 }
 /*****/
+
+
+.tech-stack {
+  margin-bottom: 10px;
+  /*margin-top: 0;*/
+}
+
+
+.tech-stack span{
+  font-size: 13px;
+  background-color: #ccccff;
+  color: #283048;
+
+  display: inline-block;
+  /*box-sizing: border-box;*/
+  border-radius: 2px;
+  /*min-width: 20px;*/
+  line-height: 15px;
+  margin: 1px;
+  border: 1px solid #ccccff;
+  padding: 2px;
+}
 
 
 
