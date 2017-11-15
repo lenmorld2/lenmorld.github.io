@@ -220,11 +220,11 @@ h2.main-header{
   /*font: bold 200% Consolas, Monaco, monospace;*/
   border-right: .1em solid;
   width: 16.5em; /* fallback */
-  width: 26ch; /* # of chars */
+  width: 22ch; /* # of chars */
   margin: 10px calc(50% - 12ch);
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3s steps(26, end), /* # of steps = # of chars */
+  animation: typing 3s steps(22, end), /* # of steps = # of chars */
   blink-caret .5s step-end infinite alternate;
 }
 /*****/
