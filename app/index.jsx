@@ -1,9 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import Cli from "./Cli";
+import ReactTerminal from "./ReactTerminal";
+
 class App extends React.Component {
 	render() {
-		return <div>React: Hello World!</div>;
+        return (
+            <ReactTerminal />
+        )
 	}
 }
 
