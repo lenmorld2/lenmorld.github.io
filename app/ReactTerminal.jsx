@@ -3,7 +3,10 @@ import React from "react";
 class ReactTerminal extends React.Component {
 	render() {
         return (
-            <div className="terminal">{"lenny > Loading website..."}</div>
+            <div>
+                <div className="terminal">{"lenny > Loading website..."}</div>
+                <a href="./index2.html">OLD SITE</a>
+            </div>
         )
 	}
 }
