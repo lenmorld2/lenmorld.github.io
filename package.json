@@ -10,7 +10,7 @@
     "dev:client": "webpack-dev-server --hot --inline",
     "dev": "npm-run-all --parallel start dev:client",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
