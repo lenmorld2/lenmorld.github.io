@@ -7,8 +7,7 @@ class ReactTerminal extends React.Component {
        
        this.state = {
            prompt: "lenny > ",
-           commandHistory: [],
-           completeLog: []
+           commandHistory: {}
        }
     }
 
@@ -17,18 +16,27 @@ class ReactTerminal extends React.Component {
     }
 
     processCommand(command) {
-        return `>> ${command} -> ${command.toUpperCase()}`;
+        // TODO: create a unique ID for this command:result pair
+        //  for nwo use date integer
+
+        const timeStamp = new Date().getTime();
+
+        return { id: timeStamp, commands: command, result: `...coming soon...` } ;
     }
 
     sendCommand(event) {
         if (event.keyCode === 13) {
             const command = event.target.value;
-            const result = this.processCommand(command);
+            const commandResultPair = this.processCommand(command);
+
+            // { ..., id: "somecommand: blahblah"}
 
             this.setState({
-                commandHistory: this.state.commandHistory.concat(command),
-                completeLog: this.state.completeLog.concat(result)
-            })
+                commandHistory: {
+                    ...this.state.commandHistory,    
+                    [commandResultPair.id]: commandResultPair.result 
+                },
+            });
 
             this.nameInput.value = "";
             // alert(event.target.value);
@@ -36,16 +44,15 @@ class ReactTerminal extends React.Component {
     }
 
     render() {
+        debugger;
         return (
             <div>
-                {/* commandHistory */}
-                { this.state.commandHistory.map(c => {
-                    return <div>{this.state.prompt} {c}</div>
-                }) }
+                {
+                    Object.entries(this.state.commandHistory).map(cmd => {
+                        return <div key={cmd[0]}>[{cmd[0]}] - {cmd[1]}</div>
+                    })
+                }
 
-                { this.state.completeLog.map(c => {
-                    return <div><p>{c}</p></div>
-                }) }
                 <div className="terminal">
                     {this.state.prompt}
                     <span className="cursor">
