@@ -3,8 +3,9 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    color: #ccccff;
-    font-size: 3em;
+	/* color: #ccccff; */
+	color: limegreen;
+    font-size: 24px;		/* 3em before */
 	/* background: #300a24; */
 	
 	background: #000;
@@ -24,12 +25,12 @@ input:focus{
     outline: none;
 }
 
-.matrix {
+/* .matrix {
 	width: 100px;
 	height: 100px;
 	background-color: blue;
 	position :absolute;
-}
+} */
 
 .animate {
 	/* animation: mymove 5s infinite; */

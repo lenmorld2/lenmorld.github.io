@@ -1,0 +1,14 @@
+
+.code {
+	position:fixed;
+	z-index:1;
+ }
+
+.always {
+	 z-index: 999;
+	 position: absolute;
+	 top:0;
+	 left:0;
+	 color: white;
+	 border: 1px solid red;
+ }

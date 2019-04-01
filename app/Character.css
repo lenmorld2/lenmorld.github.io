@@ -1,0 +1,10 @@
+.character {
+	font-size: 24px;
+	color: #059625;
+	text-shadow: 0px 0px 1px #45e406;
+}
+
+.character.primary {
+	color:#83f183;
+	text-shadow: 0px 0px 10px white;
+ }
