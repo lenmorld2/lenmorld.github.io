@@ -14,3 +14,18 @@ STEPS:
 	which is read by lenmorld.github.io by default (can't even change it)
 
 [ ] click anywhere to type in the command input
+
+
+[ ] matrix effect
+
+	[ ] - Level 1: canvas animation
+		[/] - working animation
+		[ ] - make input usable
+
+	[ ] - Level 2: pure css?
+
+	[ ] - React component, keeping Character, Line and Matrix in state
+		--> too laggy
+
+		[ ] solve movement problem
+			[ ] TODO: practice scrolling div from top to bottom, then continues to top

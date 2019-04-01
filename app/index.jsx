@@ -12,7 +12,7 @@ class App extends React.Component {
     componentDidMount() {
         console.log(123);
         // setupAnimation();
-        setupAnimation2();
+        // setupAnimation2();
     }
 
 	render() {
@@ -26,7 +26,7 @@ class App extends React.Component {
 
         return (
             <div>
-                <canvas id="matrix"></canvas>
+                {/* <canvas id="matrix"></canvas> */}
                 {/* <Matrix /> */}
                 <ReactTerminal />
             </div>

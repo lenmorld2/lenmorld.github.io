@@ -21,7 +21,7 @@ class ReactTerminal extends React.Component {
 
         const timeStamp = new Date().getTime();
 
-        return { id: timeStamp, commands: command, result: `...coming soon...` } ;
+        return { id: timeStamp, command: command, result: `...coming soon...` } ;
     }
 
     sendCommand(event) {
@@ -34,7 +34,7 @@ class ReactTerminal extends React.Component {
             this.setState({
                 commandHistory: {
                     ...this.state.commandHistory,    
-                    [commandResultPair.id]: commandResultPair.result 
+                    [commandResultPair.id]: commandResultPair
                 },
             });
 
@@ -49,7 +49,9 @@ class ReactTerminal extends React.Component {
             <div>
                 {
                     Object.entries(this.state.commandHistory).map(cmd => {
-                        return <div key={cmd[0]}>[{cmd[0]}] - {cmd[1]}</div>
+                        return <div key={cmd[0]}>
+                           {this.state.prompt} {cmd[1].command} <br/> [{cmd[0]}] - {cmd[1].result}
+                        </div>
                     })
                 }
 

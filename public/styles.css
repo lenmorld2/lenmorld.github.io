@@ -17,7 +17,8 @@ input {
     font-family: 'Ubuntu', sans-serif;
     background: transparent;
     border: none;
-    color: #ccccff;
+	/* color: #ccccff; */
+	color: limegreen;
     font-size: 1em;
 }
 
