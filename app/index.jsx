@@ -5,7 +5,9 @@ import { setupAnimation2 } from './animations';
 
 import Cli from "./Cli";
 import ReactTerminal from "./ReactTerminal";
-import Matrix from "./Matrix";
+// import Matrix from "./Matrix";
+
+import "./matrix";
 
 class App extends React.Component {
 
