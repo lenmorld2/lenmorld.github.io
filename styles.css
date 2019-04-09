@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+	/* color: #ccccff; */
+	color: limegreen;
+    font-size: 24px;		/* 3em before */
+	/* background: #300a24; */
+	
+	background: #000;
+	overflow:hidden;
+}
+
+div#app {
+	position: absolute;
+    left: 20px;
+    top: 20px;
+    /* width: 100vw; */
+    background: black;
+    opacity: 0.7;
+}
+
+
+input {
+    font-family: 'Ubuntu', sans-serif;
+    background: transparent;
+    border: none;
+	/* color: #ccccff; */
+	color: limegreen;
+    font-size: 1em;
+}
+
+input:focus{
+    outline: none;
+}
+
+/* .matrix {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	position :absolute;
+} */
+
+.animate {
+	/* animation: mymove 5s infinite; */
+	animation: mymove 5s;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+/* .cursor {
+	position: relative;
+} */
+/* .cursor	i {
+	position: absolute;
+	width: 1px;
+	height: 80%;
+	background-color: gray;
+	left: 5px;
+	top: 10%;
+	animation-name: blink;
+	animation-duration: 800ms;
+	animation-iteration-count: infinite;
+	opacity: 1;
+}
+
+.cursor input:focus + i {
+	display: none;
+}
+
+@keyframes blink {
+	from { opacity: 1; }
+	to { opacity: 0; }
+} */
