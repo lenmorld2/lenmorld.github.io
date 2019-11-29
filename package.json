@@ -4,10 +4,8 @@
   "description": "Lenny's portfolio site",
   "main": "index.js",
   "scripts": {
-    "dev:client": "webpack-dev-server --hot --inline",
-    "dev": "npm-run-all --parallel start dev:client",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d public -b master"
+    "dev": "parcel src/index.html -p 4002",
+    "deploy": "gh-pages -d src -b master"
   },
   "repository": {
     "type": "git",
@@ -21,6 +19,9 @@
   },
   "homepage": "https://github.com/lenmorld/lenmorld.github.io#readme",
   "devDependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.0.1"
+  },
+  "dependencies": {
+    "parcel": "^1.12.4"
   }
 }

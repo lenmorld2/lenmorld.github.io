@@ -1,0 +1,106 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFFF;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	/* root */
+	font-size: 16px;
+
+	/* TODO css-vars */
+	color: #202020;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 20px;
+
+	top: 0;
+	position: fixed;
+	position: sticky;
+	width: 100%;
+
+	/* flex-wrap: wrap; */
+
+	border-bottom: 1px solid #202020;
+
+	font-size: 1.5rem;
+	background: #FFFFFF;
+}
+
+.logo {
+	/* padding: 0 10px; */
+}
+
+
+nav {
+	/* padding: 5px; */
+}
+
+nav ul {
+	display: flex;
+	margin: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	margin: 0;
+}
+
+nav ul li div {
+	padding: 0 10px;
+}
+
+/* MAIN */
+main {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
+	/* margin: 0 20px; */
+	/* width: 80%; */
+	/* margin: 0 auto; */
+
+	/* padding: 0 20px; */
+	/* if using fixed header */
+	/* margin-top: 100px; */
+}
+
+section {
+	line-height: 1.5;
+	font-size: 1.33rem;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background-color: black;
+	color: white;
+}
+
+
+blockquote {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+blockquote .quote {
+	font-size: 2rem;
+}
+
+blockquote .author {
+	font-size: 1rem;
+	font-style: italic;
+}
