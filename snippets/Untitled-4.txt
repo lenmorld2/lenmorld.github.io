@@ -1,0 +1,6 @@
+**Sticky for headers and navs**
+
+For headers and nav menus, `sticky` allows you to fix them at the top
+while not defining the precise `height` of the header and the body below it.
+
+I.e. when using `fixed`, you need to define the `height` of the fixed part.

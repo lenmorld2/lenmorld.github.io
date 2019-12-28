@@ -1,0 +1,7 @@
+Today I learned:
+
+- flex-wrap: wrap
+
+- box-sizing: border-box
+
+- position: sticky (vs fixed)

@@ -20,9 +20,11 @@ body {
 
 header {
 	display: flex;
+	/* wrap to next line on mobile */
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 5px 20px;
+	padding: 15px 20px;
 
 	top: 0;
 	position: fixed;
@@ -49,11 +51,17 @@ nav {
 nav ul {
 	display: flex;
 	margin: 0;
+	/* remove padding-inline-start for mobile  */
+	padding: 0;
 }
 
 nav ul li {
 	list-style-type: none;
 	margin: 0;
+}
+
+nav ul li:first-child div {
+	padding: 0;
 }
 
 nav ul li div {

@@ -1,0 +1,6 @@
+/* 	margin: 10px; */
+	/* position: fixed; */
+/* 	position: sticky; */
+/* 	width: 100%; */
+
+/* 	flex-wrap: wrap; */
